@@ -20,5 +20,3 @@ function moveCard(card, from, to) {
     from.removeChild(card);
     to.appendChild(card);
 }
-
-export { initializeInputHandling };
