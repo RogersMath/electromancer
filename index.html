@@ -6,23 +6,20 @@
     <title>Electromancer Card Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div id="game-container" class="bg-white p-8 rounded-lg shadow-lg">
-        <h1 class="text-3xl font-bold mb-4">Electromancer Card Game</h1>
-        <div id="main-menu" class="mb-4">
-            <button id="start-game" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Start Game</button>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+    <h1 class="text-3xl font-bold mb-4">Electromancer Card Game</h1>
+    <div id="game-board" class="w-full max-w-3xl bg-white rounded-lg shadow-lg p-6">
+        <div id="player-hand" class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Your Hand</h2>
+            <div id="hand-cards" class="flex flex-wrap gap-2"></div>
         </div>
-        <div id="game-board" class="hidden">
-            <div id="player-hand" class="mb-4"></div>
-            <div id="spell-chain" class="mb-4"></div>
-            <button id="execute-attack" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Execute Attack</button>
-            <div id="result" class="mt-4"></div>
+        <div id="spell-construction" class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Spell Construction</h2>
+            <div id="spell-cards" class="flex flex-wrap gap-2 min-h-16 p-2 border-2 border-dashed border-gray-300 rounded"></div>
         </div>
+        <button id="execute-spell" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Execute Spell</button>
+        <div id="result" class="mt-4"></div>
     </div>
-
-    <script src="js/card.js"></script>
-    <script src="js/execute.js"></script>
-    <script src="js/inputHandling.js"></script>
-    <script src="js/main.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
