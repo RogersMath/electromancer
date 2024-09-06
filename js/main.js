@@ -1,8 +1,4 @@
 // main.js
-import { Card, Deck } from './card.js';
-import { executeSpell } from './execute.js';
-import { initializeInputHandling } from './inputHandling.js';
-
 let playerDeck, computerDeck;
 let playerScore = 0, computerScore = 0;
 let currentRound = 0;
