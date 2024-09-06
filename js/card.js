@@ -51,5 +51,3 @@ class Deck {
         return this.cards.splice(0, n);
     }
 }
-
-export { Card, Deck };
