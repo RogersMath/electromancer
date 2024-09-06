@@ -46,5 +46,3 @@ function buildExpression(spellChain) {
 function binaryNot(n) {
     return ~n & 0xF;  // Bitwise NOT limited to 4 bits
 }
-
-export { executeSpell };
